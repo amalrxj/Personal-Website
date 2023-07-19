@@ -563,7 +563,7 @@ img {
 }
 
 #preloader{
-  background: #3e6ff4 url("loader1.gif") center center;
+  background: #3e6ff4 url(assets/img/loader1.gif) center center;
   background-size: 90%;
   height: 100vh;
   width: 100%;

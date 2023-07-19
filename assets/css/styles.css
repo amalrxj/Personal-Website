@@ -33,6 +33,15 @@
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
+  #preloader{
+    background: #3e6ff4 url("loader1.gif") center center;
+    background-size: 90%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000001;
+  
+  }
 }
 
 /*===== BASE =====*/
@@ -50,6 +59,7 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
+
 
 h1, h2, p {
   margin: 0;
@@ -135,6 +145,15 @@ img {
     padding: 2rem;
     background-color: var(--second-color);
     transition: .5s;
+  }
+  #preloader{
+    background: #3e6ff4 url("loader1.gif") center center;
+    background-size: 90%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000001;
+  
   }
 }
 
@@ -384,6 +403,16 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+#preloader{
+  background: #3e6ff4 url("loader1.gif") center center;
+  background-size: 90%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000001;
+
+}
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
@@ -391,6 +420,15 @@ img {
   }
   .home__img {
     width: 200px;
+  }
+  #preloader{
+    background: #3e6ff4 url("loader1.gif") center center;
+    background-size: 90%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000001;
+  
   }
 }
 
@@ -429,6 +467,15 @@ img {
   .contact__container {
     justify-items: center;
   }
+  #preloader{
+    background: #3e6ff4 url("loader1.gif") center center;
+    background-size: 90%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000001;
+  
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -444,7 +491,7 @@ img {
   }
   .section-title::after {
     width: 80px;
-    top: 4rem;
+    top: 3rem;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -482,6 +529,15 @@ img {
     align-items: center;
     text-align: initial;
   }
+  #preloader{
+    background: #3e6ff4 url("loader1.gif") center center;
+    background-size: 90%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000001;
+  
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -495,4 +551,24 @@ img {
   .home__img {
     width: 450px;
   }
+  #preloader{
+    background: #3e6ff4 url("loader1.gif") center center;
+    background-size: 90%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000001;
+  
+  }
 }
+
+#preloader{
+  background: #3e6ff4 url("loader1.gif") center center;
+  background-size: 90%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000001;
+
+}
+

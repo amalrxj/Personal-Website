@@ -334,6 +334,10 @@ img {
   width: 70%;
 }
 
+.skills__py {
+  width: 80%;
+}
+
 .skills__img {
   margin-top: 2rem;
   border-radius: .5rem;

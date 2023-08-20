@@ -335,6 +335,7 @@ img {
 }
 
 .skills__img {
+  margin-top: 2rem;
   border-radius: .5rem;
 }
 

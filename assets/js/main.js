@@ -1,105 +1,56 @@
-/*===== MENU SHOW =====*/
-const showMenu = (toggleId, navId) => {
-  const toggle = document.getElementById(toggleId),
+/*===== MENU SHOW =====*/ 
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show')
-    })
-  }
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
+    }
 }
-showMenu('nav-toggle', 'nav-menu')
+showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction() {
-  const navMenu = document.getElementById('nav-menu')
-  // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove('show')
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive() {
-  const scrollY = window.pageYOffset
+function scrollActive(){
+    const scrollY = window.pageYOffset
 
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute('id')
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-    } else {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-    }
-  })
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
 }
 window.addEventListener('scroll', scrollActive)
 
-// /*=== test===*/
-// let backtotop = select('.back-to-top')
-// if (backtotop) {
-//     const toggleBacktotop = () => {
-//         if (window.scrollY > 20) {
-//             backtotop.classList.add('active')
-//         } else {
-//             backtotop.classList.remove('active')
-//         }
-//     }
-//     window.addEventListener('load', toggleBacktotop)
-//     onscroll(document, toggleBacktotop)
-// }
-
-// let preloader = select('#preloader');
-// if (preloader) {
-//     window.addEventListener('load', () => {
-//         preloader.remove()
-
-//     });
-// }
-
-let mybutton = document.getElementById("#back-to-top");
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 120 ||
-    document.documentElement.scrollTop > 120
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 2000,
-  delay: 200,
-  //     reset: true
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+//     reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 400 });
-sr.reveal('.home__social-icon', { interval: 200 });
-sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
-
-
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 

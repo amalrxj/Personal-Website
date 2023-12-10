@@ -325,19 +325,20 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  animation: html-fill 4s forwards;
 }
 
 .skills__js {
-  width: 75%;
+
+  animation: js-fill 4s forwards;
 }
 
 .skills__node {
-  width: 70%;
+  animation: node-fill 4s forwards;
 }
 
 .skills__py {
-  width: 80%;
+  animation: py-fill 4s forwards;
 }
 
 .skills__img {
@@ -526,5 +527,47 @@ img {
 
   .home__img {
     width: 450px;
+  }
+}
+
+/* Animation */
+
+@keyframes html-fill {
+
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes js-fill {
+
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes node-fill {
+
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes py-fill {
+
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
   }
 }

@@ -339,7 +339,7 @@ img {
 }
 
 .home__scroll {
-  display: none;
+  display: flex;
 }
 
 .home__scroll-button {
@@ -489,20 +489,20 @@ img {
 }
 
 .skills__html {
-  animation: html-fill 5s 2s ease forwards;
+  animation: html-fill 5s 1s ease forwards;
 }
 
 .skills__js {
 
-  animation: js-fill 5s 2s ease forwards;
+  animation: js-fill 5s 1s ease forwards;
 }
 
 .skills__node {
-  animation: node-fill 5s 2s ease forwards;
+  animation: node-fill 5s 1s ease forwards;
 }
 
 .skills__py {
-  animation: py-fill 5s 2s ease forwards;
+  animation: py-fill 5s 1s ease forwards;
 }
 
 .skills__img {

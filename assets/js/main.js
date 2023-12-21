@@ -94,4 +94,3 @@ sr.reveal('.home__data, .home__scroll, .about__img, .skills__subtitle, .skills__
 sr.reveal('.home__img, .about__subtitle, .about__text, .about__button, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
-sr.reveal('.skills__html, .skills__js, .skills__node, .skills__py',{delay:1500, origin: 'left', interval: 200});

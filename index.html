@@ -185,15 +185,15 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
-                <form method="post"
-                    action="https://script.google.com/macros/s/AKfycbzq5ZVr48FvOLLV-ic_9ZA0Ie8eE1LuCRzOCFgltJGJGJ3DxhY32kpiqJDXQ-k--i-Pyw/exec"
-                    class="contact__form">
-                    <input type="text" name="name" placeholder="Name" class="contact__input" autocomplete="off">
-                    <input type="mail" name="email" placeholder="Email" class="contact__input" autocomplete="off">
-                    <textarea name="message" placeholder="Messages..." cols="0" rows="10" class="contact__input"
+                <form class="contact__form" id="contact-form">
+                    <input type="text" name="name" id="name" placeholder="Name" class="contact__input" required
                         autocomplete="off">
-                    </textarea>
+                    <input type="email" name="email" id="email" placeholder="Email" class="contact__input" required
+                        autocomplete="off">
+                    <textarea name="message" id="message" required placeholder="Messages..." cols="0" rows="8"
+                        class="contact__input"></textarea>
                     <input type="submit" value="Submit" class="contact__button button">
+                    <p class="contact__msg" id="contact-msg"></p>
                 </form>
             </div>
         </section>
@@ -213,6 +213,10 @@
         <p class="footer__copy">&#169; Amal Raj. All rights reserved</p>
     </footer>
 
+    <!--===== EMAILJS =====-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--===== CONTACTJS ====-->
+    <script src="assets/js/contact.js"></script>
     <!--===== TYPED.JS =====-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!--===== SCROLL REVEAL =====-->

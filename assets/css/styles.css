@@ -10,10 +10,8 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  /* #3e6ff4 */
-  --second-color: hsl(var(--hue-color), 56%, 12%);
-  /* #0d1730 */
+  --first-color: hsl(var(--hue-color), 89%, 60%); /* #3e6ff4 */
+  --second-color: hsl(var(--hue-color), 56%, 12%); /* #0d1730 */
   --footer-color: #0d1730;
   --body-bg-color: #fff;
   --button-item-color: #fff;
@@ -63,7 +61,7 @@
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size: .815rem;
   }
 }
 
@@ -341,7 +339,7 @@ img {
   right: 0;
   bottom: 5rem;
   width: 260px;
-  animation: float-home-img 4s ease-in-out infinite;
+  animation: floating-home-img 4s ease-in-out infinite;
   animation-delay: 2s;
 }
 
@@ -423,7 +421,6 @@ img {
   font-size: var(--mb-2);
 }
 
-
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
@@ -475,16 +472,12 @@ img {
 .skills__html {
   animation: html-fill 4s 1s ease forwards;
 }
-
 .skills__js {
-
   animation: js-fill 4s 1s ease forwards;
 }
-
 .skills__node {
   animation: node-fill 4s 1s ease forwards;
 }
-
 .skills__py {
   animation: py-fill 4s 1s ease forwards;
 }
@@ -507,10 +500,6 @@ img {
 
 .contact__input:focus {
   border-color: var(--first-color);
-}
-
-.contact__input:-webkit-autofill {
-  transition: background-color 6000s, color 6000s;
 }
 
 .contact__input textarea {
@@ -567,7 +556,6 @@ img {
   }
 
   .home__img {
-
     width: 200px;
   }
 }
@@ -753,7 +741,6 @@ img {
   0% {
     width: 0%;
   }
-
   100% {
     width: 90%;
   }
@@ -763,7 +750,6 @@ img {
   0% {
     width: 0%;
   }
-
   100% {
     width: 75%;
   }
@@ -773,7 +759,6 @@ img {
   0% {
     width: 0%;
   }
-
   100% {
     width: 70%;
   }
@@ -783,22 +768,19 @@ img {
   0% {
     width: 0%;
   }
-
   100% {
     width: 80%;
   }
 }
 
 /*======== HOME ANIMATION =========*/
-@keyframes float-home-img {
+@keyframes floating-home-img {
   0% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-20px);
   }
-
   100% {
     transform: translateY(0);
   }
@@ -810,7 +792,6 @@ img {
     transform: translateY(40px);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;

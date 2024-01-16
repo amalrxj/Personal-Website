@@ -10,8 +10,10 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%); /* #3e6ff4 */
-  --second-color: hsl(var(--hue-color), 56%, 12%); /* #0d1730 */
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  /* #3e6ff4 */
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+  /* #0d1730 */
   --footer-color: #0d1730;
   --body-bg-color: #fff;
   --button-item-color: #fff;
@@ -20,7 +22,7 @@
   --scrollbar-thumb: #476fdd;
   --scrollbar-thumb-hover: #2a5be2;
   /*===== Font and typography =====*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Poppins', 'sans-serif';
   --big-font-size: 2rem;
   --standard-font-size: 1rem;
   --h2-font-size: 1.25rem;
@@ -472,12 +474,15 @@ img {
 .skills__html {
   animation: html-fill 4s 1s ease forwards;
 }
+
 .skills__js {
   animation: js-fill 4s 1s ease forwards;
 }
+
 .skills__node {
   animation: node-fill 4s 1s ease forwards;
 }
+
 .skills__py {
   animation: py-fill 4s 1s ease forwards;
 }
@@ -502,14 +507,14 @@ img {
   border-color: var(--first-color);
 }
 
-.contact__input textarea {
-  resize: none;
-}
-
 .contact__msg {
   position: absolute;
   font-size: var(--smaller-font-size);
   color: var(--first-color);
+}
+
+.contact__input textarea {
+  resize: none;
 }
 
 .contact__button {
@@ -741,6 +746,7 @@ img {
   0% {
     width: 0%;
   }
+
   100% {
     width: 90%;
   }
@@ -750,6 +756,7 @@ img {
   0% {
     width: 0%;
   }
+
   100% {
     width: 75%;
   }
@@ -759,6 +766,7 @@ img {
   0% {
     width: 0%;
   }
+
   100% {
     width: 70%;
   }
@@ -768,6 +776,7 @@ img {
   0% {
     width: 0%;
   }
+
   100% {
     width: 80%;
   }
@@ -778,9 +787,11 @@ img {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -792,6 +803,7 @@ img {
     transform: translateY(40px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;

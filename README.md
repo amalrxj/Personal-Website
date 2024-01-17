@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✨ Awesome Portfolio ✨
 
 A fully responsive portfolio website showcasing my skills and projects. 🚀
@@ -29,3 +30,6 @@ Contributions are welcome! 🎉 If you spot any issues or have suggestions for i
 ## ⭐ Star and Follow on LinkedIn
 
 If you find this portfolio helpful or interesting, please consider giving it a star ⭐ on GitHub and following me on [LinkedIn](https://www.instagram.com/amal.rxj_/) for more updates and projects!
+=======
+Helloo
+>>>>>>> main

@@ -20,7 +20,7 @@ To run the portfolio locally, follow these steps:
 
 ## 🚀 Deployment
 
-The portfolio is deployed on Netlify. Visit the live version [here](https://amalrxj.netlify.app/). 🌟
+The portfolio is deployed on Netlify. Visit the live version [here](https://amalrajkv.netlify.app/). 🌟
 
 ## 🤝 Contributing
 
@@ -28,4 +28,4 @@ Contributions are welcome! 🎉 If you spot any issues or have suggestions for i
 
 ## ⭐ Star and Follow on LinkedIn
 
-If you find this portfolio helpful or interesting, please consider giving it a star ⭐ on GitHub and following me on [LinkedIn](https://www.instagram.com/amal.rxj_/) for more updates and projects!
+If you find this portfolio helpful or interesting, please consider giving it a star ⭐ on GitHub and following me on [Instagram](https://www.instagram.com/amal.rxj_/) for more updates and projects!

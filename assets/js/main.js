@@ -38,6 +38,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -72,3 +73,68 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
 sr.reveal('.home__img, .about__subtitle, .about__text, .about__button, .skills__img', { delay: 400 });
 sr.reveal('.home__social-icon, .home__scroll', { interval: 200 });
 sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
+
+/*==================== SKILLS ====================*/
+const skillsContent = document.getElementsByClassName("skills__content"),
+    skillsHeader = document.querySelectorAll(".skills__header");
+
+function toggleSkills() {
+    let itemClass = this.parentNode.className;
+
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills__content skills__close";
+    }
+    if (itemClass === "skills__content skills__close") {
+        this.parentNode.className = "skills__content skills__open";
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener("click", toggleSkills);
+});
+
+/*==================== QUALIFICATION TABS ====================*/
+
+const tabs = document.querySelectorAll("[data-target]"),
+    tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach((tabContent) => {
+            tabContent.classList.remove("qualification__active");
+        });
+        target.classList.add("qualification__active");
+
+        tabs.forEach((tab) => {
+            tab.classList.remove("qualification__active");
+        });
+        tab.classList.add("qualification__active");
+    });
+});
+
+
+/*================== EMAIL JS CONTACT =================*/
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-msg')
+
+const sendEmail = (e) => {
+    e.preventDefault()
+    //ServiceID, TemplateID, #form, publickey
+    emailjs.sendForm('service_c0n6gpa', 'template_axvxtb9', '#contact-form', 'ldlAFMA6vlTrKV6V7')
+        .then(() => {
+            //show sent message
+            contactMessage.textContent = 'Message sent successfully ✅'
+            //Remove message after five seconds
+            setTimeout(() => {
+                contactMessage.textContent = ''
+            }, 5000)
+            //Clear input field
+            contactForm.reset()
+        }, () => {
+            //Show error message
+            contactForm.textContent = 'Message not sent (service error) ❌'
+        })
+}
+contactForm.addEventListener('submit', sendEmail)

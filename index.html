@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- =====SCROLL REVEAL===== -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- =====BOX ICONS===== -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -44,7 +46,7 @@
 
   <body>
     <!--==== SCROLL TOP ====-->
-    <a href="#" class="scrollup" id="scroll-up">
+    <a href="#" class="scrollup" id="scroll-up" aria-label="theme change">
       <i class="bx bx-up-arrow-alt scrollup__icon"></i>
     </a>
     <!--======= Light/Dark theme button ========-->
@@ -56,23 +58,23 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="index.html" class="nav__logo">
+          <a href="index.html" class="nav__logo" aria-label="home page">
             <h3 class="nav__logos">Amal Raj</h3>
           </a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
+              <a href="#home" class="nav__link active" aria-label="home page">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link" aria-label="about section">About</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+              <a href="#skills" class="nav__link" aria-label="skill section">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link" aria-label="contact section">Contact</a>
             </li>
           </ul>
         </div>
@@ -91,21 +93,21 @@
               class="home__title__type"
             ></span>
           </h1>
-          <a href="#contact" class="button">Contact</a>
+          <a href="#contact" class="button" aria-label="contact section">Contact</a>
         </div>
         <div class="home__social">
-          <a
+          <a aria-label="instagram icon"
             href="https://www.instagram.com/amal.rxj_/"
             class="home__social-icon"
             ><i class="bx bxl-instagram"></i
           ></a>
-          <a href="https://github.com/amalrxj" class="home__social-icon"
+          <a aria-label="github icon" href="https://github.com/amalrxj" class="home__social-icon"
             ><i class="bx bxl-github"></i
           ></a>
-          <a href="https://telegram.dog/dqjinn369" class="home__social-icon"
+          <a aria-label="telegram icon" href="https://telegram.dog/dqjinn369" class="home__social-icon"
             ><i class="bx bxl-telegram"></i
           ></a>
-          <a href="mailto:amalrajkvdev@gmail.com" class="home__social-icon"
+          <a aria-label="gmail icon" href="mailto:amalrajkvdev@gmail.com" class="home__social-icon"
             ><i class="bx bxl-gmail"></i
           ></a>
         </div>
@@ -130,7 +132,7 @@
           </svg>
         </div>
         <div class="home__scroll">
-          <a href="#about" class="home__scroll-button button--flex">
+          <a href="#about" class="home__scroll-button button--flex" aria-label="about section">
             <i class="bx bx-mouse home__scroll-mouse"></i>
           </a>
         </div>
@@ -154,7 +156,7 @@
               and explore new technologies.
             </p>
             <div class="about__button">
-              <a
+              <a aria-label="resume pdf"
                 download=""
                 href="assets/pdf/resume.pdf"
                 class="button button--flex"
@@ -475,16 +477,16 @@
     <footer class="footer">
       <p class="footer__title">Amal Raj</p>
       <div class="footer__social">
-        <a href="https://www.instagram.com/amal.rxj_/" class="footer__icon"
+        <a aria-label="instagram" href="https://www.instagram.com/amal.rxj_/" class="footer__icon"
           ><i class="bx bxl-instagram"></i
         ></a>
-        <a href="https://github.com/amalrxj" class="footer__icon"
+        <a  aria-label="github" href="https://github.com/amalrxj" class="footer__icon"
           ><i class="bx bxl-github"></i
         ></a>
-        <a href="https://telegram.dog/dqjinn369" class="footer__icon"
+        <a aria-label="telegram" href="https://telegram.dog/dqjinn369" class="footer__icon"
           ><i class="bx bxl-telegram"></i
         ></a>
-        <a
+        <a aria-label="linkedin"
           href="https://www.linkedin.com/in/amal-raj-1343a2283/"
           class="footer__icon"
         >
@@ -501,8 +503,6 @@
     ></script>
     <!--===== TYPED.JS =====-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
   </body>

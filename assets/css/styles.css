@@ -19,6 +19,7 @@
   --text-color-light: hsl(var(--hue-color), 89%, 60%);
   --first-color-light: hsl(var(--hue-color), 90%, 85%);
   --footer-item-color: #fff;
+  --nav-link-color: #fff;
   --scrollbar-bg: #fff;
   --scrollbar-thumb: #476fdd;
   --scrollbar-thumb-hover: #2a5be2;
@@ -56,6 +57,7 @@
   --body-bg-color: #0d1730;
   --button-item-color: #ffffff;
   --footer-item-color: #ffffff;
+  --nav-link-color: #0d1730;
   --scrollbar-bg: #0d1730;
   --scrollbar-thumb: #476fdd;
   --scrollbar-thumb-hover: #2a5be2;
@@ -252,7 +254,7 @@ img {
 
 .nav__link {
   position: relative;
-  color: #fff;
+  color: var(--nav-link-color);
 }
 
 .nav__link:hover {

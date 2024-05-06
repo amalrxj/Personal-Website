@@ -931,7 +931,7 @@ img {
 
 .skills__img {
   border-radius: 0.5rem;
-  width: fit-content;
+  width: max-content;
 }
 
 /*==================== QUALIFICATION ====================*/
